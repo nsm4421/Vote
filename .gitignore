@@ -2,6 +2,11 @@
 **.g.dart
 **.gr.dart
 **.config.dart
+**.spec.md
+.env
+supabase/
+
+lib/core/l10n/*.dart
 
 pubspec.lock
 .metadata
