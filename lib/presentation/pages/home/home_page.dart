@@ -1,6 +1,7 @@
-import 'package:app_component/components.dart';
+import 'package:app_extension/app_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:vote/core/extension/build_context_extension.dart';
+
+import '../../widgets/app_scaffold.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

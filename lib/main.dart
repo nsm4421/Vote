@@ -1,10 +1,10 @@
 import 'package:app_theme/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:app_extension/app_extension.dart';
+import 'package:app_l10n/app_l10n.dart';
 import 'package:vote/core/di/dependency_injection.dart';
-import 'package:vote/core/extension/build_context_extension.dart';
-import 'package:vote/core/l10n/app_localizations.dart';
 
-import 'app/router/app_router.dart';
+import 'presentation/router/app_router.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
