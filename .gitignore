@@ -3,6 +3,7 @@
 **.gr.dart
 **.config.dart
 **.spec.md
+**.module.dart
 .env
 supabase/
 
