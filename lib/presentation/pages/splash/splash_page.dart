@@ -1,10 +1,9 @@
-import 'package:app_component/components.dart';
 import 'package:flutter/material.dart';
-
 import 'package:go_router/go_router.dart';
-import 'package:vote/core/extension/build_context_extension.dart';
-import 'package:vote/core/extension/color_extension.dart';
-
+import 'package:app_extension/app_extension.dart';
+import '../../widgets/app_card.dart';
+import '../../widgets/gap.dart';
+import '../../widgets/primary_button.dart';
 import '../../router/app_router.dart';
 
 class SplashPage extends StatelessWidget {

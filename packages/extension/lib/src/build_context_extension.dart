@@ -1,6 +1,5 @@
+import 'package:app_l10n/app_l10n.dart';
 import 'package:flutter/material.dart';
-
-import '../l10n/app_localizations.dart';
 
 extension BuildContextExtension on BuildContext {
   /// size, height, width
@@ -32,4 +31,8 @@ extension BuildContextExtension on BuildContext {
   ColorScheme get colorScheme => Theme.of(this).colorScheme;
 
   TextTheme get textTheme => Theme.of(this).textTheme;
+
+  ThemeData get theme => Theme.of(this);
+
+  bool get isDarkMode => theme.brightness == Brightness.dark;
 }

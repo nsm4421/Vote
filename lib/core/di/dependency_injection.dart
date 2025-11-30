@@ -1,9 +1,14 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
+import 'package:supabase_datasource/supabase_datasource.dart';
 
 import 'dependency_injection.config.dart';
 
-@InjectableInit()
+@InjectableInit(
+  externalPackageModulesBefore: [
+    ExternalModule(SupabaseDatasourcePackageModule),
+  ],
+)
 Future<void> configureDependencies() async {
   GetIt.instance.init();
 }

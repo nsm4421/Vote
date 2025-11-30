@@ -1,0 +1,19 @@
+name: supabase_datasource
+description: Supabase datasource package for Vote App
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+
+dependencies:
+  supabase: ^2.10.0
+  app_env:
+    path: ../env
+  get_it: ^9.1.1
+  injectable: ^2.7.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  injectable_generator: ^2.6.2
+  build_runner: ^2.10.4
