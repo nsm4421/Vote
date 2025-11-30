@@ -2,6 +2,9 @@
 
 앱에서 사용하는 L10n 키와 한국어/영어 메시지 표입니다.
 
+## Generate Code
+`flutter gen-l10n`
+
 ## 공통
 - `appTitle`: KO `Vote App`, EN `Vote App`
 - `homeTitle`: KO `Vote App`, EN `Vote App`
