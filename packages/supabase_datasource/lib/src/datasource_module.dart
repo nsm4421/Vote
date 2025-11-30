@@ -1,13 +1,11 @@
-import 'package:injectable/injectable.dart';
 import 'package:supabase/supabase.dart';
 import 'package:app_env/app_env.dart';
 
-@module
-abstract class SupabaseDataSource {
-  @lazySingleton
-  @preResolve
-  SupabaseClient get _client =>
-      SupabaseClient(SupabaseEnv.supabaseUrl, SupabaseEnv.supabaseKey);
+class SupabaseDataSource {
+  final SupabaseClient _client = SupabaseClient(
+    SupabaseEnv.supabaseUrl,
+    SupabaseEnv.supabaseKey,
+  );
 
   SupabaseQueryBuilder getQueryBuilder(String tableName) =>
       _client.from(tableName);
